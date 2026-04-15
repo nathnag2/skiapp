@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: skiapp
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
+    service.beta.kubernetes.io/aws-load-balancer-nlb-target-type: ip
+  labels:
+    app: skiapp
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 8080
+    protocol: TCP
+  selector:
+    app: skiapp
