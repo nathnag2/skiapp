@@ -34,7 +34,7 @@ spec:
       initContainers:
       - name: git-clone
         image: alpine/git
-        command: ["git", "clone", "https://github.com/<YOUR_GITHUB_USER>/skiapp.git", "/app"]
+        command: ["git", "clone", "https://github.com/nathnag2/skiapp.git", "/app"]
         volumeMounts:
         - name: app-source
           mountPath: /app
