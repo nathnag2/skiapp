@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/<YOUR_GITHUB_USER>/skiapp
+    repoURL: https://github.com/nathnag2/skiapp
     targetRevision: HEAD
     path: k8s
   destination:
